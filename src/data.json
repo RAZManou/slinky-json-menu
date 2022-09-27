@@ -1,19 +1,23 @@
 {
-    "id": "file",
-    "value": "File",
-    "popup": {
-        "menuitem": [
-            { "value": "New", "onclick": "CreateNewDoc()" },
-            { "value": "Open", "onclick": "OpenDoc()" },
-            { "value": "Close", "onclick": "CloseDoc()" }
-        ],
+    "candidate": {
+        "ID": "CANDIDATE-1",
         "details": {
             "name": {
-                "firstname": "Razafimisata",
-                "lastname": "Manoa"
+                "firstname": "Manoa",
+                "lastname": "Razafimisata"
             },
+            "email": "manoandoniaina@gmail.com",
             "age": "26",
-            "birthday": "22-09-1996"
-        }
-    }
+            "birthday": "22-09-1996",
+            "skills": ["ReactJS", "NodeJS", "GraphQL"]
+        },
+        "languages": [
+            { "language": "Malagasy", "level": "Native" },
+            { "language": "French", "level": "Very Good" },
+            { "language": "English", "level": "Basic" }
+        ]
+    },
+    "subject": "Application",
+    "position": "Fullstack Javascript Developer",
+    "type": "Frontend"
 }
