@@ -20,13 +20,20 @@ const Menu = ({ json }) => {
     const type = checkDataType(lastData);
 
     return (
-        <div>
+        <div
+            style={{
+                backgroundColor: "#f6f7f8",
+                color: "#222",
+                width: "fit-content",
+                height: "fit-content",
+            }}
+        >
             {parent && (
                 <IconButton onClick={onGoBack}>
-                    <ArrowBackIcon />
+                    <ArrowBackIcon fontSize="small" style={{ color: "grey" }} />
                 </IconButton>
             )}
-            <List>
+            <List style={{ padding: 0 }}>
                 {type === "object" ? (
                     Object.keys(lastData).map((key, index) => (
                         <MenuItem
