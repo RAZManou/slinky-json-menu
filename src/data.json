@@ -1,0 +1,19 @@
+{
+    "id": "file",
+    "value": "File",
+    "popup": {
+        "menuitem": [
+            { "value": "New", "onclick": "CreateNewDoc()" },
+            { "value": "Open", "onclick": "OpenDoc()" },
+            { "value": "Close", "onclick": "CloseDoc()" }
+        ],
+        "details": {
+            "name": {
+                "firstname": "Razafimisata",
+                "lastname": "Manoa"
+            },
+            "age": "26",
+            "birthday": "22-09-1996"
+        }
+    }
+}
