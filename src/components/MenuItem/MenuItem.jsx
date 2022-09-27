@@ -2,12 +2,14 @@ import { ListItem, ListItemText } from "@material-ui/core";
 import React from "react";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 
-const MenuItem = ({ content, children, setDatas }) => {
+const MenuItem = ({ content, child, setDatas }) => {
     const handleClickItem = () => {
-        setDatas((data) => {
-            const newDatas = [...data, children];
-            return newDatas;
-        });
+        if (child && setDatas) {
+            setDatas((data) => {
+                const newDatas = [...data, child];
+                return newDatas;
+            });
+        }
     };
 
     return (
